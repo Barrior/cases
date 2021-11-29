@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>百度一下，你就知道</title>
+        <link rel="stylesheet" href="index.css">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            .box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 100px;
+            }
+
+            img {
+                width: 270px;
+            }
+
+            .input-box {
+                display: flex;
+
+            }
+
+            input {
+                width: 548px;
+                height: 44px;
+                padding: 0 16px;
+                font-size: 16px;
+                border: 2px solid #c4c7ce;
+                border-right: none;
+                border-radius: 10px 0 0 10px;
+                color: #222;
+                outline: none;
+            }
+
+            .btn {
+                cursor: pointer;
+                width: 108px;
+                height: 44px;
+                line-height: 45px;
+                background-color: #4e6ef2;
+                border-radius: 0 10px 10px 0;
+                font-size: 17px;
+                color: #fff;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <img src="https://www.baidu.com/img/PC_7ac6a6d319ba4ae29b38e5e4280e9122.png" alt="img">
+            <div class="input-box">
+                <input type="text">
+                <div class="btn">百度一下</div>
+            </div>
+        </div>
+    </body>
+</html>

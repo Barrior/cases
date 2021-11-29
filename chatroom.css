@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+.chatroom {
+    width: 800px;
+    height: 800px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    display: flex;
+    background: #ececec;
+}
+
+.contact {
+    width: 130px;
+    height: 100%;
+    background: #333;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.contact-name {
+    font-size: 26px;
+    padding: 10px;
+}
+
+.contact-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact-item {
+    border-bottom: 1px solid #666;
+    padding: 10px;
+}
+
+.main {
+    flex-grow: 1;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.list {
+    flex-grow: 1;
+    padding: 10px 0;
+    overflow: auto;
+}
+
+.list-item {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 10px;
+    word-break: break-all;
+}
+
+.list-item .message {
+    background-color: #70c9f3;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.list-item .avatar {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+.list-item-right {
+    justify-content: left;
+}
+
+.list-item-right .avatar {
+    margin-right: 5px;
+    margin-left: 0;
+}
+
+.list-item-right .message {
+    background: #fff;
+}
+
+.footer {
+    display: flex;
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.footer textarea {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+}
+
+.footer button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 0 20px;
+    margin-left: 20px;
+    border-radius: 4px;
+}
+
+.form {
+    background: #fff;
+    width: 500px;
+    border-radius: 4px;
+    padding: 50px 100px;
+    border: 1px solid #ccc;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: slideInDown 600ms ease;
+}
+
+.form-title {
+    font-size: 26px;
+    text-align: center;
+}
+
+.form-item {
+    margin-bottom: 15px;
+}
+
+.form-btn {
+    width: 100%;
+    background: #1a9af5;
+    border: none;
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 4px;
+}
+
+.form-label {
+    display: inline-block;
+    width: 70px;
+}
+
+.form-input {
+    display: inline-block;
+    width: 222px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.form-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0, 0.5);
+}
+
+@keyframes slideInDown {
+    0% {
+        transform: translate(-50%, -200%);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
